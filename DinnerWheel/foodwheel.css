@@ -52,7 +52,7 @@
   left: -100px;
   text-align: center;
   display: block;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   font-family: Arial ;
   font-weight: bold;
  }
@@ -92,6 +92,46 @@
     transform:rotate(315deg);
     border-top-color: #EDA72D;
 
+}
+
+.Arrow {
+    margin-top: 230px;
+    margin-left: 280px;
+    display: none;
+}
+.Arrow_Square {
+    height: 20px;
+    width: 60px;
+    background-color: #ED1C2A;
+    position: absolute;
+        }
+.Arrow_Triangle {
+    height: 0;
+    width: 0;
+    margin-left: 50px;
+    border-left: 20px  solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid;
+    color: #ED1C2A;
+    transform: rotate(-90deg);
+   
+}
+.button {
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#3AF2A9 ;
+    box-shadow: 8px 8px gray;
+    font-family: fantasy;
+    font-size: 100%;
+    color: #126B1E;
+}
+
+.button:hover {background-color: #22E39F}
+
+.button:active {
+    background-color:#22E39F;
+    box-shadow: 8px 8px gray;
+    transform: translateX(4px) translateY(4px);
 }
 
 
