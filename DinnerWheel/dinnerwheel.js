@@ -6,6 +6,7 @@ $(document).ready(function(){
             var num = rot + 5000;
             var value = 'rotate(' + num + 'deg)';
             $('.spinning-wheel').css('transform', value);   
-            $('.Arrow').fadeIn('slow');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
+            $('.Arrow').fadeIn('slow');
+            $('.button-wrapper').fadeOut('slow');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
     }) 
 })
