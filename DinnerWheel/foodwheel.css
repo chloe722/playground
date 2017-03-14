@@ -1,12 +1,12 @@
 body {
-    background-color: #292E30;
+    background-color: #F5EDEF;
 }
 
 .wrapper {
   width: 500px;
   height: 500px;
   position: absolute;
-  background: #505561;
+  background: #FFFFFF;
   border-radius: 500px;
   border: 5px solid #2B3245;
   box-shadow: 5px 5px #3A4052;
@@ -81,12 +81,12 @@ body {
 
 .pie5 {
     transform:rotate(180deg);
-    border-top-color: #13D8F2;
+    border-top-color: #1BB1E3;
 }
 
 .pie6 {
     transform:rotate(225deg);
-    border-top-color: #4EE653;    
+    border-top-color: #3CC435;    
 }
 
 .pie7 {
@@ -102,8 +102,8 @@ body {
 .highlight{
     color: #EB090D;
     font-weight: bold;
-    font-size: 135%;
-    -webkit-text-stroke: 0.5px black;
+    font-size: 140%;
+    -webkit-text-stroke: 0.2px black;
     text-shadow:
         3px 3px 0 #000,
         -1px -1px 0 #000,
@@ -111,7 +111,7 @@ body {
         -1px 1px 0 #000,
         1px 1px 0 #000;
 
-    font-family: Fantasy;
+    font-family: fantasy;
     z-index: 200;
 }
 
@@ -176,17 +176,17 @@ body {
 .button {
     border-radius: 5px;
     padding: 15px;
-    background-color:#3AF2A9 ;
+    background-color:#F792C5 ;
     box-shadow: 8px 8px gray;
     font-family: fantasy;
     font-size: 200%;
-    color: #126B1E;
+    color: #E32957;
 }
 
-.button:hover {background-color: #22E39F}
+.button:hover {background-color: #F27C99}
 
 .button:active {
-    background-color:#22E39F;
+    background-color:#F27C99;
     box-shadow: 8px 8px gray;
     transform: translateX(4px) translateY(4px);
 }

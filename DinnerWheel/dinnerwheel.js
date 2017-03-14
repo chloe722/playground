@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('.wrapper').slideDown('slow', function(){
             var rot = Math.floor(Math.random() * 360);
             console.log('rot', rot);
-            var num = rot + 2160;
+            var num = rot + 3240;
             var value = 'rotate(' + num + 'deg)';
             $('.spinning-wheel').css('transform', value);   
             $('.Arrow').fadeIn('slow');
