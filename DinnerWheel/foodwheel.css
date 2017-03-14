@@ -1,3 +1,7 @@
+body {
+    background-color: #292E30;
+}
+
 .wrapper {
   width: 500px;
   height: 500px;
@@ -28,7 +32,7 @@
 }*/
 
 
-
+ 
 .pie {
   width: 0;
   height: 0;
@@ -36,8 +40,7 @@
   border-left: 104px solid transparent;
   border-right: 104px solid transparent;
   border-top: 250px solid;
-  border-top-color:#884EE6;
-  transform:rotate(0deg);
+  transform: rotate(0deg);
   transform-origin: 50% bottom;
   left:148px;
   top:0;
@@ -57,15 +60,18 @@
   font-weight: bold;
  }
 
+.pie1 {
+    border-top-color:#884EE6;
+}
 .pie2 {
     transform:rotate(45deg);
-    border-top-color: #F52F50;
+    border-top-color: #D10639;
 
 }
 
 .pie3 {
     transform:rotate(90deg);
-    border-top-color: #FA70BA;
+    border-top-color: #F255B9;
 }
 
 .pie4 {
@@ -75,7 +81,7 @@
 
 .pie5 {
     transform:rotate(180deg);
-    border-top-color: #4EE6C0;
+    border-top-color: #13D8F2;
 }
 
 .pie6 {
@@ -91,32 +97,72 @@
 .pie8 {
     transform:rotate(315deg);
     border-top-color: #EDA72D;
+}
 
+.highlight{
+    color: #EB090D;
+    font-weight: bold;
+    font-size: 135%;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+    font-family: Fantasy;
+    z-index: 200;
 }
 
 .Arrow {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -330px;
+    margin-left: -350px;
     display: none;
+
 }
-.Arrow_Square {
+.ArrowSquare {
     height: 20px;
     width: 60px;
-    background-color: #ED1C2A;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #FA253E;
     position: absolute;
-        }
-.Arrow_Triangle {
+    animation-name: colorchange;
+    animation-duration: 5s;
+    outline-style: solid 1px black; 
+}
+.ArrowTriangle {
     height: 0;
     width: 0;
     margin-left: 50px;
     border-left: 20px  solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid;
-    color: #ED1C2A;
+    color: #FA253E;
     transform: rotate(-90deg);
+    animation: borderColor 5s forwards; 
+    
    
+}
+
+@keyframes borderColor {
+      0% {border-top-color: #8439E6;}
+    25% {border-top-color: #F230CF;}
+    50% {border-top-color: #FAFA32;}
+    95% {border-top-color: #F77F3E;}
+    99.8% {border-top-color: #EBF5F4;}
+    100% {border-top-color: #FA253E;}
+    
+}
+
+@keyframes colorchange {
+    0% {background-color: #8439E6;}
+    25% {background-color: #F230CF;}
+    50% {background-color: #FAFA32;}
+    95% {background-color: #F77F3E;}
+    100% {background-color: #EBF5F4;}
 }
 
 .button-wrapper {
@@ -129,11 +175,11 @@
 
 .button {
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
     background-color:#3AF2A9 ;
     box-shadow: 8px 8px gray;
     font-family: fantasy;
-    font-size: 100%;
+    font-size: 200%;
     color: #126B1E;
 }
 
@@ -142,7 +188,7 @@
 .button:active {
     background-color:#22E39F;
     box-shadow: 8px 8px gray;
-    transform: translateX(1px) translateY(1px);
+    transform: translateX(4px) translateY(4px);
 }
 
 
