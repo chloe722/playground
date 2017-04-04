@@ -1,0 +1,86 @@
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    color: mediumvioletred;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation:
+      typing 3.5s steps(40, end);
+    text-align: center;
+    font-family: Impact;
+}
+
+@keyframes typing {
+    from { width: 0}
+    to {width: 100%}
+}
+#you {
+    text-align: center;
+    float: left;
+    width: 50%;
+    font-size: 200%;
+    display: inline;  
+}
+
+#pc {
+    float: right;
+    text-align: center;
+    width: 50%;
+    font-size: 200%;
+    display: inline;
+}
+
+
+.userside1 { 
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin-left: 60px;
+
+}
+
+.computerside1 {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin-left: 100px;
+}
+
+.userside2 { 
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin-left: 60px;
+    display: none;
+
+}
+
+.computerside2 {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin-left: 100px;
+    display: none;
+}
+
+.userside3 { 
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin-left: 60px;
+    display: none;
+
+}
+
+.computerside3 {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin-left: 100px;
+    display: none;
+}
+
