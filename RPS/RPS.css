@@ -84,3 +84,41 @@ h1 {
     display: none;
 }
 
+.button {
+    position: absolute;
+    top: 90px;
+    left: 520px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid gray;
+    height: 150px;
+    width: 150px;
+}
+
+#rockbutton {
+    margin-top: -6px;
+    margin-left: -10px;
+}
+
+.button2 {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid gray;
+    height: 125px;
+    width: 125px;
+}
+
+#paperbutton {
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+.button3 {
+    position: ;
+    top: 200px;
+    left: 570px;
+}
+
+.button3 {
+
+}
