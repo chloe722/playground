@@ -1,5 +1,4 @@
-$('document').ready(function() {
-    function rockPaperScissors(userInput) {
+function rockPaperScissor(userInput) {
         var computerChoice = Math.floor(Math.random() * 3) + 1;
         var userChoice = userInput.toUpperCase();
         var userChoice2;
@@ -40,14 +39,10 @@ $('document').ready(function() {
                 document.write('<h1>My rock is much stronger than your scissor! What you gonna do ?</h1>');
             }
             else if (computerChoice === 2) {
-                document.write('<h1>No No No! Please do not cut my</h1>');
+                document.write('<h1>No No No! Please do not cut my paper</h1>');
             }
             else if (computerChoice === 3) {
                 document.write('<h1>Both of us are scissor..How about be my friend? PEACE!</h1>');
             }
         }
-    }
-});
-
-
-/*rockPaperScissors(prompt('Battle Time! Rock, Paper or Scissor?'));*/
+}

@@ -95,30 +95,44 @@ h1 {
     width: 150px;
 }
 
+.buttonactive:active {
+    box-shadow: 7px 7px #65676b;
+    transform: translateX(4px) translateY(4px);
+}
+
 #rockbutton {
     margin-top: -6px;
     margin-left: -10px;
 }
 
 .button2 {
+    position: absolute;
+    top: 260px;
+    left: 520px;
     background-color: transparent;
     border-radius: 100%;
-    border: 1px solid gray;
-    height: 125px;
-    width: 125px;
+    border: 2px solid gray;
+    height: 135px;
+    width: 140px;
 }
 
 #paperbutton {
-    margin-top: -10px;
-    margin-left: -15px;
+    margin-top: -15px;
+    margin-left: -20px;
 }
 
 .button3 {
-    position: ;
-    top: 200px;
-    left: 570px;
+    position: absolute;
+    top: 430px;
+    left: 520px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid gray;
+    height: 135px;
+    width: 140px;
 }
 
-.button3 {
-
+#scissorbutton {
+    margin-top: -15px;
+    margin-left: -20px; 
 }
