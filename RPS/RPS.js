@@ -80,22 +80,22 @@ function showRandom(){
 }
 
 setTimeout(function(){
-    $('#r').animate({
-        'top': '150px',
-        'left': '150px'
-    }, 500)
-}, 1000)
+    $('.cat').css({
+        'top' :'100px',
+        'left': '300px'
+    })
+}, 1000);
 
 setTimeout(function(){
-    $('#r').animate({
+    $('.cat').css({
         'top': '300px',
         'left': '300px'
-    }, 500)
-}, 2000)
+    })
+}, 2000);
 
 setTimeout(function(){
-    $('#r').animate({
-        'width':'200px',
-        'height':'200px'
-    }, 500)
-}, 3000)
+    $('.cat').css({
+        'top':'200px',
+        'left':'200px'
+    })
+}, 3000);

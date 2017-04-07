@@ -128,10 +128,7 @@ h1 {
     display: none;
 }
 
-#r {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    position: fixed;
-    transition: width height top left 1s;
+#cat {
+    width: 25%;
+    height: 25%;
 }
