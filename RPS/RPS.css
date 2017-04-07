@@ -1,5 +1,6 @@
 body {
-    background-color: lightyellow;
+    background-color: lightgoldenrodyellow;
+    
 }
 
 h1 {
@@ -35,31 +36,16 @@ h1 {
 }
 
 
-.userside1 { 
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 60px;
-
-}
-
-.computerside1 {
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 100px;
-}
-
-.userside2 { 
+.userside {
     width: 40%;
     height: 40%;
     object-fit: contain;
     margin-left: 60px;
     display: none;
-
 }
 
-.computerside2 {
+
+.computerside {
     width: 40%;
     height: 40%;
     object-fit: contain;
@@ -67,32 +53,19 @@ h1 {
     display: none;
 }
 
-.userside3 { 
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 60px;
-    display: none;
-
-}
-
-.computerside3 {
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 100px;
-    display: none;
-}
 
 .button {
     position: absolute;
-    top: 90px;
-    left: 520px;
+    top: 50%;
+    left: 50%;
     background-color: transparent;
     border-radius: 100%;
     border: 1px solid gray;
     height: 150px;
     width: 150px;
+    margin-top: -225px;
+    margin-left: -75px;
+    d isplay: none;
 }
 
 .buttonactive:active {
@@ -107,13 +80,16 @@ h1 {
 
 .button2 {
     position: absolute;
-    top: 260px;
-    left: 520px;
+    top: 50%;
+    left: 50%;
     background-color: transparent;
     border-radius: 100%;
     border: 2px solid gray;
     height: 135px;
     width: 140px;
+    margin-top: -63px;
+    margin-left: -70px;
+    d isplay: none;
 }
 
 #paperbutton {
@@ -123,16 +99,39 @@ h1 {
 
 .button3 {
     position: absolute;
-    top: 430px;
-    left: 520px;
+    top: 50%;
+    left: 50%;
     background-color: transparent;
     border-radius: 100%;
     border: 2px solid gray;
     height: 135px;
     width: 140px;
+    margin-top: 93px;
+    margin-left: -70px;
+    d isplay: none;
 }
 
 #scissorbutton {
     margin-top: -15px;
     margin-left: -20px; 
+}
+
+#dialog{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    text-align: center;
+    width: 400px;
+    height: 130px;
+    border: 1px solid black;
+    padding-top: 70px;
+    display: none;
+}
+
+#r {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    position: fixed;
+    transition: width height top left 1s;
 }
