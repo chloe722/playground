@@ -66,6 +66,8 @@ function rockPaperScissor(userInput) {
 
 
 function userChoose(choice) {
+    window.humanChoice = choice;
+
     $('.userside').hide();
     if (choice === 'ROCK'){
        $('.userside.rock').show();
@@ -79,6 +81,8 @@ function userChoose(choice) {
 }
 
 function computerChoose(choice) {
+    window.computerChoice = choice;
+
     $('.computerside').hide();
     if (choice === 'ROCK'){
        $('.computerside.rock').show();
@@ -99,9 +103,34 @@ function showRandom(){
     var choices = ['ROCK', 'PAPER', 'SCISSOR'];
     var computerChoice = choices[ Math.floor(Math.random() * 3) ];
     var humanChoice = choices[ Math.floor(Math.random() * 3) ];
+
+    if (window.computerChoice === computerChoice){
+        if(computerChoice === 'ROCK') {
+            computerChoice = 'PAPER'
+        }
+        else if(computerChoice === 'PAPER') {
+            computerChoice = 'SCISSOR'
+        }
+        else if(computerChoice === 'SCISSOR') {
+            computerChoice = 'ROCK'
+        }
+    }
+
+    if (window.humanChoice === humanChoice) {
+        if (humanChoice === 'ROCK') {
+            humanChoice = 'SCISSOR'
+        }
+        else if (humanChoice === 'PAPER') {
+            humanChoice = 'ROCK'
+        }
+        else if (humanChoice === 'SCISSOR'){
+            humanChoice = 'PAPER'
+        }
+    }
     computerChoose(computerChoice);
-    userChoose  (humanChoice);
+    userChoose(humanChoice);
 }
+    
 
 $('document').ready(function(){
         $('.cat,.boy').hide(500);
