@@ -94,7 +94,6 @@ h1 {
     width: 150px;;
     margin-top: -225px;
     margin-left: -75px;
-    display: no;
 }
 
 .buttonactive:active {
@@ -118,7 +117,6 @@ h1 {
     width: 140px;
     margin-top: -63px;
     margin-left: -70px;
-    display: n;
 }
 
 #paperbutton {
@@ -137,7 +135,6 @@ h1 {
     width: 140px;
     margin-top: 93px;
     margin-left: -70px;
-    /*display:none;*/
 }
 
 #scissorbutton {

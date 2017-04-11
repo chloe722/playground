@@ -8,53 +8,65 @@ function rockPaperScissor(userInput) {
 
         if (userInput === 'ROCK' ) {
             if (computerChoice === 'ROCK') {
-                dialogText('Rock to rock...Seems we need to fight more to see who is winner');
-                $('.rockTorock').show(1000);
-            
+                setTimeout(function(){
+                    dialogText('Rock to rock...Seems we need to fight more to see who is winner');
+                    $('.rockTorock').show(1000);
+                }, 700);
             } 
             else if (computerChoice === 'PAPER') {
-                dialogText('My paper wrapped your rock!..HaHaHa!');
-                $('.rockIswrapped').show(1000);
+                 setTimeout(function(){
+                     dialogText('My paper wrapped your rock!..HaHaHa!');
+                     $('.rockIswrapped').show(1000);
+                }, 700);
             
             }
             else if (computerChoice === 'SCISSOR') {
-                dialogText('Oh no... your rock is too strong..please show some mercy!');
-                $('.rockBeatscissor').show(1000);
-            
+                setTimeout(function(){
+                    dialogText('Oh no... your rock is too strong..please show some mercy!');
+                    $('.rockBeatscissor').show(1000);    
+                }, 700);           
             }
         }
         if (userInput === 'PAPER') {
             if (computerChoice === 'ROCK') {
-                dialogText('I am struggling to make my rock to run away from your paper..');
-                $('.paperWraprock').show(1000);
-            
+                setTimeout(function(){
+                    dialogText('I am struggling to make my rock to run away from your paper..');
+                    $('.paperWraprock').show(1000);
+                }, 700);
             }
             else if (computerChoice === 'PAPER') {
-                dialogText('Two papers....what we can do with two papers...? Cannot even fight!');
-                $('.paperAndpaper').show(1000);
-            
+                setTimeout(function(){
+                    dialogText('Two papers....what we can do with two papers...? Cannot even fight!');
+                    $('.paperAndpaper').show(1000);
+                }, 700);
             }
             else if(computerChoice === 'SCISSOR') {
-                dialogText('Scissor..Scissor..I am going to cut cut cut!');
-                $('.scissorAttack').show(1000);               
+                setTimeout(function(){
+                    dialogText('Scissor..Scissor..I am going to cut cut cut!');
+                    $('.scissorAttack').show(1000);    
+                }, 700);
+                             
             }
         }
-        
+
         if (userInput === 'SCISSOR') {
             if (computerChoice === 'ROCK') {
-                dialogText('My rock is much stronger than your scissor! What you gonna do ?');
-                $('.rockCrashuser').show(1000);
-            
-                
+                setTimeout(function(){
+                     dialogText('My rock is much stronger than your scissor! What you gonna do ?');
+                     $('.rockCrashuser').show(1000);
+                }, 700);
             }
             else if (computerChoice === 'PAPER') {
-                dialogText('No No No! Please do not cut my paper');
-                $('.beggingCat').show(1000);
-            
+                setTimeout(function(){
+                    dialogText('No No No! Please do not cut my paper');
+                    $('.beggingCat').show(1000);
+                }, 700);
             }
             else if (computerChoice === 'SCISSOR') {
-                dialogText('Both of us are scissor..How about be my friend? PEACE!');
-                $('.friend').show(1000);    
+                setTimeout(function(){
+                    dialogText('Both of us are scissor..How about be my friend? PEACE!');
+                    $('.friend').show(1000);    
+                }, 700);
             }
         }
         setTimeout(function(){
@@ -68,13 +80,13 @@ function userChoose(choice) {
 
     $('.userside').hide();
     if (choice === 'ROCK'){
-       $('.userside.rock').show();
+            $('.userside.rock').show();  
     }
     else if (choice === 'PAPER'){
-        $('.userside.paper').show();
+            $('.userside.paper').show();
     }
     else if (choice === 'SCISSOR'){
-        $('.userside.scissor').show();
+            $('.userside.scissor').show();
     }
 }
 
@@ -83,13 +95,13 @@ function computerChoose(choice) {
 
     $('.computerside').hide();
     if (choice === 'ROCK'){
-       $('.computerside.rock').show();
+            $('.computerside.rock').show();
     }
     else if (choice === 'PAPER'){
-        $('.computerside.paper').show();
+            $('.computerside.paper').show();        
     }
     else if (choice === 'SCISSOR'){
-        $('.computerside.scissor').show();
+            $('.computerside.scissor').show();
     }
 }
 
@@ -157,13 +169,3 @@ function againClick(){
    $('.restart').hide();
    window.showRandomInterval = setInterval(showRandom, 80);
 }
-
-/*window.onload = function(){
-    var hoverSound = document.getElementById('hoverSound');
-    var start = document.getElementsByClassName('start');
-
-    start.onmousehover=function(){
-        hoverSound.play();
-        return false;
-    };
-}; */
