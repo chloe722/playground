@@ -3,28 +3,60 @@
 <head>
     <title>RPS game</title>
     <link rel = 'stylesheet' href = 'RPS.css'/>
+    <script src='jquery-3.1.1.min.js'></script>
     <script src='RPS.js'></script>
     <script src="typed.js"></script>
+
 
 </head>
 <body>
     <h1>Welcome to the Rock, Paper, Scissors world!</h1>
     <div>
-    <h2 id='you'>You</h2>
-    <h2 id='pc'>Kittey PC</h2>
+    <h2 class='player' id='you'>You</h2>
+    <h2 class='player' id='pc'>Kittey PC</h2>
     </div>
+
+    <!--<audio id='hoverSound' controls='controls' preload='auto'>
+        <source  src='audio/hover.mp3'></source>
+        Your Browser does not support please use (Firefox 3.5+, Chrome 3+, Opera 10.5+, Safari 4+, IE 9+) browsers.  
+    </audio>
+    -->
     <div>
-        <img class='userside1' src='leftrock.gif' alt='SMILE'>
-        <img class='userside2' src='leftpaper.gif' alt='SMILE'>
-        <img class='userside3' src='leftscissor.gif' alt='SMILE'>
-        <img class='computerside1' src='rightrock.gif' alt='SMILE'>
-        <img class='computerside2' src='rightpaper.gif' alt='SMILE'>
-        <img class='computerside3' src='rightscissor.gif' alt='SMILE'>
+        <div id="dialog">This is dialog</div>
+        <img class='userside rock' src='leftrock.gif' alt='SMILE'>
+        <img class='userside paper' src='leftpaper.gif' alt='SMILE'>
+        <img class='userside scissor' src='leftscissor.gif' alt='SMILE'>
+        <img class='computerside rock' src='rightrock.gif' alt='SMILE'>
+        <img class='computerside paper' src='rightpaper.gif' alt='SMILE'>
+        <img class='computerside scissor' src='rightscissor.gif' alt='SMILE'>
+
     </div>
-    <div>
+    <div class='BUTTON'>
         <button class='button buttonactive' onclick='rockPaperScissor("ROCK")'><img id='rockbutton' src='rockbutton.gif'></button>
         <button class='button2 buttonactive' onclick='rockPaperScissor("PAPER")'><img id='paperbutton' src='paperbutton.png'></button>
         <button class='button3 buttonactive' onclick='rockPaperScissor("SCISSOR")'><img id='scissorbutton' src='scissorbutton.png'></button>
     </div>
+    <button class='start'> start </button>
+
+    <div>
+        <img class='cinematic rockTorock'src='rockTorock.png' alt='CIN'>
+        <img class='cinematic rockIswrapped' src='rockIswrapped.png' alt='CIN'>
+        <img class='cinematic rockBeatscissor' src='rockBeatscissor.png' alt='CIN'>
+        <img class='cinematic paperAndpaper'  src='paperAndpaper.png' alt='CIN'>
+        <img class='cinematic paperWraprock' src='paperWraprock.png' alt='CIN'>
+        <img class='cinematic scissorAttack' src='scissorAttack.png' alt='CIN'>
+        <img class='cinematic rockCrashuser'  src='rockCrashuser.png' alt='CIN'>
+        <img class='cinematic beggingCat' src='beggingCat.png' alt='CIN'>
+        <img class='cinematic friend' src='friend.png' alt='CIN'>
+    </div>
+    <div class= graphic>
+        <img class='cat'  src='cat.png' alt='CAT'> 
+        <img class='cat2' src='cat2.png' alt='CAT'>
+        <img class='cat3' src='cat3.png' alt='CAT'>
+        <img class='boy'  src='boy.png' alt='BOY'>
+        <img class='boy2' src='boy2.png' alt='BOY'>
+        <img class='boy3' src='boy3.png' alt='BOY'>
+    </div>
+    <button class='restart'>Again</button>
 </body>
 </html>

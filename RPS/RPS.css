@@ -1,9 +1,10 @@
 body {
-    background-color: lightyellow;
+    background-color: lightgoldenrodyellow;
+    
 }
 
 h1 {
-    color: mediumvioletred;
+    color: #8c7b4d;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -18,48 +19,34 @@ h1 {
     from { width: 0}
     to {width: 100%}
 }
-#you {
-    text-align: center;
-    float: left;
-    width: 50%;
-    font-size: 200%;
-    display: inline;  
-}
 
-#pc {
-    float: right;
+.player {
+    color:saddlebrown;
+    font-family: Tahoma;
     text-align: center;
     width: 50%;
     font-size: 200%;
     display: inline;
 }
-
-
-.userside1 { 
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 60px;
-
+#you {
+    float: left;
 }
 
-.computerside1 {
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 100px;
+#pc {
+    float: right;
 }
 
-.userside2 { 
+
+.userside {
     width: 40%;
     height: 40%;
     object-fit: contain;
     margin-left: 60px;
     display: none;
-
 }
 
-.computerside2 {
+
+.computerside {
     width: 40%;
     height: 40%;
     object-fit: contain;
@@ -67,32 +54,47 @@ h1 {
     display: none;
 }
 
-.userside3 { 
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 60px;
+.start {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    padding: 17px;
+    font-size: 250%;
+    font-family: fantasy;
+    font-style: bold;
+    background-color: #d99009;
+    color: white;
+    border: 3px solid #875903;
+    border-radius: 5px;
+    box-shadow: 5px 5px gray;
     display: none;
-
+    
 }
 
-.computerside3 {
-    width: 40%;
-    height: 40%;
-    object-fit: contain;
-    margin-left: 100px;
+.start:hover{
+    background-color: #916209;
+}
+.start:active {
+    background-color: #d99009;
+    box-shadow: 8px 8px gray;
+    transform: translateX(4px) translateY(4px);
+
+}
+.BUTTON {
     display: none;
 }
-
 .button {
     position: absolute;
-    top: 90px;
-    left: 520px;
+    top: 50%;
+    left: 50%;
     background-color: transparent;
     border-radius: 100%;
     border: 1px solid gray;
     height: 150px;
-    width: 150px;
+    width: 150px;;
+    margin-top: -225px;
+    margin-left: -75px;
+    display: no;
 }
 
 .buttonactive:active {
@@ -107,13 +109,16 @@ h1 {
 
 .button2 {
     position: absolute;
-    top: 260px;
-    left: 520px;
+    top: 50%;
+    left: 50%;
     background-color: transparent;
     border-radius: 100%;
     border: 2px solid gray;
     height: 135px;
     width: 140px;
+    margin-top: -63px;
+    margin-left: -70px;
+    display: n;
 }
 
 #paperbutton {
@@ -123,16 +128,129 @@ h1 {
 
 .button3 {
     position: absolute;
-    top: 430px;
-    left: 520px;
+    top: 50%;
+    left: 50%;
     background-color: transparent;
     border-radius: 100%;
     border: 2px solid gray;
     height: 135px;
     width: 140px;
+    margin-top: 93px;
+    margin-left: -70px;
+    /*display:none;*/
 }
 
 #scissorbutton {
     margin-top: -15px;
     margin-left: -20px; 
+}
+
+#dialog{
+    position: fixed;
+    bottom: 10%;
+    right: 35%;
+    text-align: center;
+    width: 400px;
+    height: 55px;
+    color: white;
+    background-color: #916209;
+    border: 5px solid saddlebrown;
+    border-radius: 5px;
+    padding-top: 10px;
+    overflow: hidden;
+    z-index: 100;
+    display: none
+}
+
+.cat {
+    position: absolute;
+    top: 150px;
+    left: 1050px;
+    width: 20%;
+    height: 50%;
+    
+}
+
+.cat2 {
+    position: absolute;
+    top: 150px;
+    left: 900px;
+    width: 20%;
+    height: 50%;
+    display:none;
+
+}
+
+.cat3 {
+    position: absolute;
+    top: 150px;
+    left: 850px;
+    width: 20%;
+    height: 50%;
+    display:none;
+
+}
+
+.boy {
+    position:absolute;
+    top: 150px;
+    left:2px;
+    width: 20%;
+    height: 50%;
+}
+
+.boy2 {
+    position:absolute;
+    top: 150px;
+    left:100px;
+    width: 20%;
+    height: 50%;
+    display: none;
+}
+
+.boy3 {
+    position:absolute;
+    top: 150px;
+    left:150px;
+    width: 20%;
+    height: 50%;
+    display: none;
+}
+
+.cinematic {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 70%;
+    display: none;
+    border: 5px solid saddlebrown;
+    border-radius: 5px;
+}
+
+
+.restart {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    padding: 10px;
+    font-size: 200%;
+    font-family: Impact;
+    background-color: #fc0810;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10%;
+    box-shadow: 5px 5px gray;
+    display: none;
+    
+}
+
+.restart:hover{
+    background-color: #cc0c13;
+}
+.restart:active {
+    background-color: #fc0810;
+    box-shadow: 8px 8px gray;
+    transform: translateX(4px) translateY(4px);
+
 }
