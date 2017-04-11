@@ -26,12 +26,12 @@ function rockPaperScissor(userInput) {
         if (userInput === 'PAPER') {
             if (computerChoice === 'ROCK') {
                 dialogText('I am struggling to make my rock to run away from your paper..');
-                $('.paperAndpaper').show(1000);
+                $('.paperWraprock').show(1000);
             
             }
             else if (computerChoice === 'PAPER') {
                 dialogText('Two papers....what we can do with two papers...? Cannot even fight!');
-                $('.paperWraprock').show(1000);
+                $('.paperAndpaper').show(1000);
             
             }
             else if(computerChoice === 'SCISSOR') {
