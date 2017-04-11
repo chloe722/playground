@@ -38,10 +38,8 @@ function rockPaperScissor(userInput) {
                 dialogText('Scissor..Scissor..I am going to cut cut cut!');
                 $('.scissorAttack').show(1000);               
             }
-            setTimeout(function(){
-                    $('.restart').show();
-                },1000);
         }
+        
         if (userInput === 'SCISSOR') {
             if (computerChoice === 'ROCK') {
                 dialogText('My rock is much stronger than your scissor! What you gonna do ?');
