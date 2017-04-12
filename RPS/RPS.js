@@ -1,4 +1,12 @@
+var rockPaperScissorCalledBefore = false; //prevent double clicking to run the function second time
+
 function rockPaperScissor(userInput) {
+
+    //prevent double clicking to run the function second time
+        if(rockPaperScissorCalledBefore) { return; }
+
+        rockPaperScissorCalledBefore = true;
+
         var choices = ['ROCK', 'PAPER', 'SCISSOR'];
         var computerChoice = choices[ Math.floor(Math.random() * 3) ];
 
@@ -159,11 +167,11 @@ $('document').ready(function(){
             $('.start').hide();
             $('.graphic').fadeOut();
             window.showRandomInterval = setInterval(showRandom, 90);
-        });
-        
+        });       
 });
 
 function againClick(){ 
+    rockPaperScissorCalledBefore = false; //make the again call the function 
    $('.cinematic').hide(100);
    $('#dialog').hide(100);
    $('.restart').hide();
