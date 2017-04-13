@@ -28,7 +28,7 @@ h1 {
     text-align: center;
     width: 50%;
     font-size: 200%;
-    display: inline;
+    
 }
 #you {
     float: left;
@@ -40,26 +40,36 @@ h1 {
 
 
 .userside {
+    position: absolute;
     width: 40%;
-    height: 40%;
+    height: auto;
     object-fit: contain;
-    margin-left: 60px;
+    left: 5%;
+    top: 150px;
     display: none;
 }
 
 
 .computerside {
+    position: absolute;
     width: 40%;
-    height: 40%;
+    height: auto;
     object-fit: contain;
-    margin-left: 100px;
+    top: 150px;
+    right: 5%;
     display: none;
 }
 
 .start {
     position: absolute;
     top: 40%;
-    left: 43%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.start button{
     padding: 17px 17px 0px 17px;
     font-size: 250%;
     font-style: bold;
@@ -69,14 +79,14 @@ h1 {
     border: 3px solid #875903;
     border-radius: 5px;
     box-shadow: 5px 5px gray;
-    display: none;
+    display: inline-block;
     
 }
 
-.start:hover{
+.start button:hover{
     background-color: #916209;
 }
-.start:active {
+.start button:active {
     background-color: #d99009;
     box-shadow: 8px 8px gray;
     transform: translateX(4px) translateY(4px);
@@ -166,18 +176,18 @@ h1 {
 .cat {
     position: absolute;
     top: 150px;
-    left: 1050px;
+    right: -5%;
     width: 20%;
-    height: 50%;
+    height: auto;
     
 }
 
 .cat2 {
     position: absolute;
     top: 150px;
-    left: 950px;
+    right: 5%;
     width: 20%;
-    height: 50%;
+    height: auto;
     display:none;
 
 }
@@ -185,9 +195,9 @@ h1 {
 .cat3 {
     position: absolute;
     top: 150px;
-    left: 870px;
+    right: 15%;
     width: 20%;
-    height: 50%;
+    height: auto;
     display:none;
 
 }
@@ -195,26 +205,26 @@ h1 {
 .boy {
     position:absolute;
     top: 150px;
-    left:2px;
+    left: -5%;
     width: 20%;
-    height: 50%;
+    height: auto;
 }
 
 .boy2 {
     position:absolute;
     top: 150px;
-    left:100px;
+    left: 5%;
     width: 20%;
-    height: 50%;
+    height: auto;
     display: none;
 }
 
 .boy3 {
     position:absolute;
     top: 150px;
-    left:150px;
+    left: 15%;
     width: 20%;
-    height: 50%;
+    height: auto;
     display: none;
 }
 
