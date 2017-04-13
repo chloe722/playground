@@ -3,7 +3,7 @@
 body {
     background-color: lightgoldenrodyellow;
     font-family: 'Lakki Reddy', cursive;
-    
+    overflow-x: hidden;
 }
 
 h1 {
