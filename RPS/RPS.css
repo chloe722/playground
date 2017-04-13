@@ -175,7 +175,7 @@ h1 {
 .cat2 {
     position: absolute;
     top: 150px;
-    left: 900px;
+    left: 950px;
     width: 20%;
     height: 50%;
     display:none;
@@ -185,7 +185,7 @@ h1 {
 .cat3 {
     position: absolute;
     top: 150px;
-    left: 850px;
+    left: 870px;
     width: 20%;
     height: 50%;
     display:none;
