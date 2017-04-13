@@ -179,6 +179,7 @@ h1 {
     right: -5%;
     width: 20%;
     height: auto;
+    display: none;
     
 }
 
@@ -208,6 +209,7 @@ h1 {
     left: -5%;
     width: 20%;
     height: auto;
+    display: none;
 }
 
 .boy2 {

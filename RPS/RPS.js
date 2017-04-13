@@ -150,10 +150,13 @@ function showRandom(){
 }
     
 
-$('document').ready(function(){
-        $('.cat,.boy').hide(500);
+setTimeout(function(){
+        $('.cat,.boy').show(900);
+        setTimeout(function(){$('.cat,.boy').hide();}, 600);
+
         $('.cat2,.boy2').show(1000);
         setTimeout(function(){$('.cat2,.boy2').hide();}, 900);
+
         $('.cat3,.boy3').show(2000);
 
         $('.restart').click(againClick);
@@ -168,7 +171,7 @@ $('document').ready(function(){
             $('.graphic').fadeOut();
             window.showRandomInterval = setInterval(showRandom, 90);
         });       
-});
+}, 1000);
 
 function againClick(){ 
     rockPaperScissorCalledBefore = false; //make the again call the function 
