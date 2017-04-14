@@ -1,4 +1,6 @@
 var rockPaperScissorCalledBefore = false; //prevent double clicking to run the function second time
+var startButtonHasClicked = false; 
+
 
 function rockPaperScissor(userInput) {
 
@@ -149,11 +151,10 @@ function showRandom(){
     userChoose(humanChoice);
 }
     
-
-setTimeout(function(){
+$(document).ready(function(){
+    setTimeout(function(){
         $('.cat,.boy').show(900);
         setTimeout(function(){$('.cat,.boy').hide();}, 600);
-
         $('.cat2,.boy2').show(1000);
         setTimeout(function(){$('.cat2,.boy2').hide();}, 900);
 
@@ -164,19 +165,26 @@ setTimeout(function(){
             $('.start').show();
         }, 3000);
         $('.start').click(function(){
+            if (startButtonHasClicked) { return; }
+            startButtonHasClicked = true;  
+            $('#start-sound')[0].play(1000);
             setTimeout(function(){
                 $('.BUTTON').show(1000);
             }, 2000);
-            $('.start').hide();
+            $('.start').fadeOut(1500);
             $('.graphic').fadeOut();
             window.showRandomInterval = setInterval(showRandom, 90);
         });       
 }, 1000);
 
 function againClick(){ 
-    rockPaperScissorCalledBefore = false; //make the again call the function 
+    rockPaperScissorCalledBefore = false; //make the again call the function
+    startButtonHasClicked = true;
+    $('#again-sound')[0].play();
    $('.cinematic').hide(100);
    $('#dialog').hide(100);
    $('.restart').hide();
    window.showRandomInterval = setInterval(showRandom, 80);
 }
+
+});

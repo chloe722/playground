@@ -13,8 +13,12 @@
     <link rel="preload" as="image" href='boy.png'/>
     <link rel="preload" as="image" href='boy2.png'/>
     <link rel="preload" as="image" href='boy3.png'/>
+
+
 </head>
 <body>
+    
+
     <h1>Welcome to the Rock, Paper, Scissors world!</h1>
     <div>
     <h2 class='player' id='you'>You</h2>
@@ -59,5 +63,20 @@
         <img class='boy3' src='boy3.png' alt='BOY'>
     </div>
     <button class='restart'>Again</button>
+
+    <div class='audioStart'>
+     <audio id='start-sound'controls="controls" preload="auto">
+				<source src="hover.mp3">
+				<source src="hover.ogg">
+				Your browser isn't invited for super fun time.
+	</audio>
+    </div>
+    <div class='audioAgain'>
+    <audio id='again-sound' control='controls' preload='auto'>
+        <source src='again.mp3'>
+        <source src='again.ogg'>
+        Your broswer isn't invited for super fun time'
+    </audio>
+    </div>
 </body>
 </html>

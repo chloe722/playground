@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Lakki+Reddy');
 
+.audioStart{
+    position:absolute;
+    top:0px; 
+    width:200px; 
+    left:0px; 
+    border:1px solid #000;
+    display: none;
+}
+
+.audioAgain{
+    position:absolute;
+    top:50px; 
+    width:200px; 
+    left:0px; 
+    border:1px solid #000;
+    display: none;
+}
 body {
     background-color: lightgoldenrodyellow;
     font-family: 'Lakki Reddy', cursive;
