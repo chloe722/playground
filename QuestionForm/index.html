@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <script src='jquery-3.1.1.min.js'></script>
+    <script src='QuestionForm.js'></script>
+    <link rel="stylesheet" href="QuestionForm.css"/>
+    <title>Question</title>
+</head>
+<body class="line-style">
+    <div class="header">
+        <a href="#" onclick="gridStyle()" class="hide-if-grid-style">Grid-Style</a>
+        <a href="#" onclick="lineStyle()" class="hide-if-line-style">Line-Style</a>
+    </div>
+    <fieldset>
+        <legend>Form</legend> 
+
+        <div class="field-group">
+
+            <label>Gender:</label>
+            <div class="field">
+                <input id="female" type="radio" name="gender"></input>
+                <label for="female">Female</label>
+                <input id="male" type="radio" name="gender"></input>
+                <label for="male">Male</label>
+                <input id="transgender" type="radio" name="gender"></input>
+                <label for="transgender">Transgender</label>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <label for="whereAreYouFrom">Where are you from?</label>
+            <div class="field">
+                <select name="whereAreYouFrom">
+                    <option>United State</option>
+                    <option>South America</option>
+                    <option>United Kindom</option>
+                    <option>Europe</option>
+                    <option>Middle East</option>
+                    <option>Taiwan</option>
+                    <option>Japan</option>
+                    <option>South Korea</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+</body>
+</html>

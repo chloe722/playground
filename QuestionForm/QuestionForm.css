@@ -1,0 +1,37 @@
+
+body {
+    background-color: #2a0442;
+}
+
+.header {
+    width: 720px;
+    text-align: right;
+    margin: 10px auto;
+
+}
+
+fieldset {
+    width: 720px;
+    background-color: #2a0442;
+    color: wheat;
+    margin: 10px auto;
+    border: #fcf93a 5px solid;
+    border-radius: 5px;
+}
+
+.field-group {
+    margin-bottom: 10px; 
+}
+
+.grid-style .field-group > label {
+    float: left;
+    width: 300px;
+}
+
+.grid-style .hide-if-grid-style {
+    display: none;
+}
+
+.line-style .hide-if-line-style {
+    display: none;
+}
