@@ -1,6 +1,6 @@
 
 body {
-    background-color: #2a0442;
+    background-color: #f9f9b6;
 }
 
 .header {
@@ -12,15 +12,27 @@ body {
 
 fieldset {
     width: 720px;
-    background-color: #2a0442;
-    color: wheat;
+    background-color: #f9f9b6;
+    color: #726860;
     margin: 10px auto;
-    border: #fcf93a 5px solid;
+    border: #ff732d 10px solid;
     border-radius: 5px;
 }
 
 .field-group {
-    margin-bottom: 10px; 
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.field {
+    margin-bottom: 15px;
+   
+}
+
+.grid-style .field {
+    float: left;
+    width: 420px;
+    margin-bottom: 10px;
 }
 
 .grid-style .field-group > label {
@@ -34,4 +46,8 @@ fieldset {
 
 .line-style .hide-if-line-style {
     display: none;
+}
+
+.submitbutton {
+    margin-top: 100px;
 }
