@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f9f9b6;
+    background-color: #eaedf2;
 }
 
 .header {
@@ -12,10 +12,10 @@ body {
 
 fieldset {
     width: 720px;
-    background-color: #f9f9b6;
+    background-color: floralwhite;
     color: #726860;
     margin: 10px auto;
-    border: #ff732d 10px solid;
+    border: #e26195 10px solid;
     border-radius: 5px;
 }
 
@@ -50,4 +50,28 @@ fieldset {
 
 .submitbutton {
     margin-top: 100px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.genderbutton input[type=radio]{
+    display: none;
+}
+
+.genderbutton input:checked + label {
+    border: 3px #dd375e solid;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+.genderbutton label:hover {
+    cursor: pointer;
+}
+p {
+    font-size: 125%;
+    text-align: center;
 }
