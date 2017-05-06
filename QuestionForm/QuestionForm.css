@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web|Monoton');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Chewy|Istok+Web|Love+Ya+Like+A+Sister|Luckiest+Guy|Monoton');
 body {
     background-color: #eaedf2;
 }
@@ -15,8 +17,14 @@ fieldset {
     background-color: floralwhite;
     color: #726860;
     margin: 10px auto;
-    border: #e26195 10px solid;
+    border: #e26195 15px inset;
     border-radius: 5px;
+    font-family: 'Istok Web', sans-serif;
+}
+legend {
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Monoton', cursive;
 }
 
 .field-group {
@@ -49,7 +57,7 @@ fieldset {
 }
 
 .submitbutton {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 img {
@@ -72,6 +80,30 @@ img {
     cursor: pointer;
 }
 p {
-    font-size: 125%;
+    font-size: 150%;
     text-align: center;
+    margin-top:20px;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #665a5d
 }
+
+.submitbutton > input{
+    border-radius: 5px;
+    width:100px;
+    height: 40px;
+    font-size:100%;
+    color: darkred;
+    background-color: #f7deea;
+    font-weight: bold;
+}
+
+.inside-field {
+    margin-top: 20px;
+}
+
+.heading {
+    font-size: 120%;
+    font-weight: bold;
+}
+

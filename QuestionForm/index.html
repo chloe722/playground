@@ -12,91 +12,102 @@
         <a href="#" onclick="lineStyle()" class="hide-if-line-style">Line-Style</a>
     </div>
     <fieldset>
-        <legend>Diet habit survay</legend> 
+        <legend>Global Diet Habit Survey</legend> 
 
         <div class="field-group">
 
-            <label>Gender:</label>
+            <label class="heading">Gender:</label>
             <div class="field genderbutton">
-                <input id="female" type="radio" name="gender"></input>
-                <label for="female"><img src="female.png"/></label>
-                <input id="male" type="radio" name="gender"></input>
-                <label for="male"><img src="male.png"/></label>
-                <input id="transgender" type="radio" name="gender"></input>
-                <label for="transgender"><img src="transgender.png"/></label>
+                <div class="inside-field">
+                    <input id="female" type="radio" name="gender"></input>
+                    <label for="female"><img src="female.png"/></label>
+                    <input id="male" type="radio" name="gender"></input>
+                    <label for="male"><img src="male.png"/></label>
+                    <input id="transgender" type="radio" name="gender"></input>
+                    <label for="transgender"><img src="transgender.png"/></label>
+                </div>
             </div>
         </div>
 
         <div class="field-group">
-            <label for="whereAreYouFrom">Where are you from?</label>
+            <label class="heading" for="whereAreYouFrom">Where are you from?</label>
             <div class="field">
-                <select name="whereAreYouFrom">
-                    <option>United States</option>
-                    <option>South America</option>
-                    <option>United Kingdom</option>
-                    <option>Europe</option>
-                    <option>Middle East</option>
-                    <option>Taiwan</option>
-                    <option>Japan</option>
-                    <option>South Korea</option>
-                    <option>Others</option>
-                </select>
+                <div class="inside-field">
+                    <select name="whereAreYouFrom">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>Middle South America</option>
+                        <option>United Kingdom</option>
+                        <option>Ireland</option>
+                        <option>Europe</option>
+                        <option>Middle East</option>
+                        <option>Taiwan</option>
+                        <option>Japan</option>
+                        <option>South Korea</option>
+                        <option>Others</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="field-group">
-            <label>What do you usually like for your starter?</label>
+            <label class="heading">What do you usually like for your starter?</label>
             <div class="field">
-                <input id="salad" type="radio" name="starter"></input>
-                <label for="salad">Fresh Salad</label>
-                <input id="soup" type="radio" name="starter"></input>
-                <label for="soup">Delicious soup</label><br/>
-                <input id="garlicbread" type="radio" name="starter"></input>
-                <label for="garlicbread">Garlic bread</label>
-                <input id="chips" type="radio" name="starter"></input>
-                <label for="chips">Crunchy Chips</label>
+                <div class='inside-field'>
+                    <input id="salad" type="radio" name="starter"></input>
+                    <label for="salad">Fresh Salad</label>
+                    <input id="soup" type="radio" name="starter"></input>
+                    <label for="soup">Delicious Soup</label><br/>
+                    <input id="garlicbread" type="radio" name="starter"></input>
+                    <label for="garlicbread">Garlic Bread</label>
+                    <input id="chips" type="radio" name="starter"></input>
+                    <label for="chips">Chrispy Chips</label>
+                </div>
             </div>
         </div>
-        <p>So..I supposed you know what's next.</p>
+        <p>I supposed you know what's next.</p>
         <div class="field-group">
-            <label>What would you like for your main dishes?</label>
+            <label class="heading">What would you like for your main dishes?</label>
             <div class="field">
-                <input id="stake" type="radio" name="maindishes"></input>
-                <label for="stake">Stake</label>
-                <input id="pizza" type="radio" name="maindishes"></input>
-                <label for="pizza">Pizza</label>
-                <select name="style">
-                    <option>Rome style</option>
-                    <option>Napoli style</option>
-                    <option>New York style</option>
-                    <option>Domino</option>
-                    <option>Pizza Hut</option>
-                    <option>As long as eatable</option>
-                </select>
-                <input id="burrito" type="radio" name="maindishes"></input>
-                <label for="burrito">Burrito</label><br/>
-                <input id="chinese" type="radio" name="maindishes"></input>
-                <label for="chinese">Chinese</label>
-                <input id="japanese" type="radio" name="maindishes"></input>
-                <label for="japanese">Japanese</label>
-                <input id="med" type="radio" name="maindishes"></input>
-                <label for="med">Mediterranean style<label><br/>
-                <input id="spanish" type="radio" name="maindishes"></input>
-                <label for="spanish">Spanish</label>
-                <input id="others" type="radio" name="maindishes"></input>
-                <label>Others (Please fill in):</label><input name="others" type="text"></input>
+                <div class='inside-field'>
+                    <input id="steak" type="radio" name="maindishes"></input>
+                    <label for="steak">Steak</label>
+                    <input id="pizza" type="radio" name="maindishes"></input>
+                    <label for="pizza">Pizza</label>
+                    <select name="style">
+                        <option>Roman-style</option>
+                        <option>Neapolitan-style</option>
+                        <option>New York-style</option>
+                        <option>Domino</option>
+                        <option>Pizza Hut</option>
+                        <option>As long as eatable</option>
+                    </select>
+                    <input id="burrito" type="radio" name="maindishes"></input>
+                    <label for="burrito">Burrito</label><br/>
+                    <input id="chinese" type="radio" name="maindishes"></input>
+                    <label for="chinese">Chinese</label>
+                    <input id="japanese" type="radio" name="maindishes"></input>
+                    <label for="japanese">Japanese</label>
+                    <input id="med" type="radio" name="maindishes"></input>
+                    <label for="med">Mediterranean style<label><br/>
+                    <input id="spanish" type="radio" name="maindishes"></input>
+                    <label for="spanish">Spanish</label><br/>
+                    <input id="others" type="radio" name="maindishes"></input>
+                    <label>Others (Please fill in):</label><input name="others" type="text"></input>
+                </div>
             </div>
         </div>
         <div class="field-group">
-            <label>Let's talk about desserts!!</label>
+            <label class="heading">Let's talk about desserts!!</label>
             <div class="field">
-                <input id="cake" type="radio" name="desserts"></input>
-                <label for="cake">Cake</label>
-                <input id="icecream" type="radio" name="desserts"></input>
-                <label for="icecream">Ice cream</label>
-                <input id="milkshake" type="radio" name="desserts"></input>
-                <label for="milkshake">Milk shake</label>
+                <div class="inside-field">
+                    <input id="cake" type="radio" name="desserts"></input>
+                    <label for="cake">Cake</label>
+                    <input id="icecream" type="radio" name="desserts"></input>
+                    <label for="icecream">Ice cream</label>
+                    <input id="milkshake" type="radio" name="desserts"></input>
+                    <label for="milkshake">Milk shake</label>
+                </div>
             </div>
-            <div>
         </div>
         <div class="submitbutton">
             <input type="submit" value="Submit"/>
