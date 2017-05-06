@@ -12,6 +12,11 @@ body {
 
 }
 
+a {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+}
+
 fieldset {
     width: 720px;
     background-color: floralwhite;
