@@ -3,35 +3,57 @@
 <head>
     <script src='jquery-3.1.1.min.js'></script>
     <link rel="stylesheet" href="digitalClock.css">
+    <link rel="stylesheet" href="960.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="text.css">
 </head>
 <body>
-    <div>
-        <h2>Alaska:<div id="alaskaTime"></div></h2>
-    </div>
-    <div>
-        <h2>Los Angeles:<div id="losangelesTime"></div></h2>
-    </div>
-     <div>
-        <h2>New York:<div id="newyorkTime"></div></h2> 
-    </div>
-    <div>
-        <h2>London:<div id="londonTime"></div></h2>
-    </div>
-    <div>
-        <h2>Berlin:<div id="berlinTime"></div></h2>
-    </div>
-    <div>
-        <h2>Vilnius:<div id="vilniusTime"></div></h2>
-    </div>
-    <div>
-        <h2>Taipei:<div id="taipeiTime"></div></h2> 
-    </div>
-    <div>
-        <h2>Tokyo:<div id="tokyoTime"></div></h2> 
-    </div>
-    <div>
-        <h2>Sydney:<div id="sydneyTime"></div></h2> 
-    </div>
+
+    <div id="container" class="container_12">
+        <div id="header" class="grid_12">
+            <h1>Here is header</h1>
+        </div> <!-- end header !-->
+        <div id= AlaskaPic class="grid_4 image">
+            <img src="Alaska.jpg" alt="Alaska" width="300" height="200"/>
+            <div class="text"><h2>Alaska:<div id="alaskaTime"></div></h2></div>
+        </div> <!-- end AlaskaPic !-->
+        <div id= LondonPic class="grid_4 image">
+            <img src="london.jpg" alt="London" width="300" height="200" />
+            <div class="text"><h2>London:<div id="londonTime"></div></h2></div>
+        </div> <!-- end LondonPic !-->
+        <div id= TaipeiPic class="grid_4 image">
+            <img src="taipei101.jpg" alt="Tapei101" width="300" height="200" />
+            <div class="text"><h2>Taipei:<div id="taipeiTime"></div></h2></div>
+        </div> <!-- end TaipeiPic !-->
+        <div id= NewYorkPic class="grid_4 image">
+            <img src="newyork.jpg" alt="NewYork" width="300" height="200" />
+            <div class="text"><h2>New York:<div id="newyorkTime"></div></h2></div>
+        </div> <!-- end NewWorkPic !-->
+        <div id= BerlinPic class="grid_4 image">
+            <img src="berlin.jpg" alt="Berlin" width="300" height="200" />
+            <div class="text"><h2>Berlin:<div id="berlinTime"></div></h2></div>
+        </div> <!-- end BerlinPic !-->
+        <div id= TokyoPic class="grid_4 image">
+            <img src="tokyo.jpg" alt="Tokyo" width="300" height="200" />
+            <div class="text"><h2>Tokyo:<div id="tokyoTime"></div></h2></div>
+        </div> <!-- end TokyoPic !-->
+        <div id= LAPic class="grid_4 image">
+            <img src="LA.jpg" alt="Los Angeles" width="300" height="200" />
+            <div class="text"><h2>Los Angeles:<div id="losangelesTime"></div></h2></div>
+        </div> <!-- end LAkPic !-->
+        <div id= VilniusPic class="grid_4 image">
+            <img src="vilnius.jpg" alt="Vilnius" width="300" height="200" />
+            <div class="text"><h2>Vilnius:<div id="vilniusTime"></div></h2></div>
+        </div> <!-- end VilniuskPic !-->
+        <div id= SydneyPic class="grid_4 image">
+            <img src="sydney.jpg" alt="Sydney" width="300" height="200" />
+            <div class="text"><h2>Sydney:<div id="sydneyTime"></div></h2></div>
+        </div> <!-- end SydneyPic !-->
+         <div id="footer" class="grid_12">
+            <h1>This is footer</h1>
+        </div> <!-- end header !-->
+    </div> <!--end container !-->
+ 
     <script src="digitalClock.js"></script>
 </body>
 </html>
