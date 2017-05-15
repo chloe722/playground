@@ -6,7 +6,8 @@ body {
 
 
 .image {
-    position: relative;
+    width: 300px;
+    height: 200px;
     margin-bottom: 20px;
     opacity: 0.8;
     box-shadow: 10px 10px 10px #888888;
@@ -21,15 +22,41 @@ body {
 .text {
     color: ghostwhite;
     text-shadow: 2px 2px 8px #161615;
-    position: absolute;
     text-align: center;
-    top: 68.5px;
-    left: 78px;
-    z-index: 100;
+    margin-top: 68px;
     font-family: 'Chonburi', cursive;
     
 }
 
+#AlaskaPic {
+    background-image: url('Alaska.jpg');
+}
+
+#LondonPic {
+    background-image: url('london.jpg');
+   
+}
+#TaipeiPic {
+    background-image: url('taipei101.jpg');
+}
+#NewYorkPic {
+    background-image: url('newyork.jpg');
+}
+#BerlinPic {
+    background-image: url('berlin.jpg');
+}
+#TokyoPic {
+    background-image: url('tokyo.jpg');
+}
+#LAPic {
+    background-image: url('LA.jpg');
+}
+#VilniusPic {
+    background-image: url('vilnius.jpg');
+}
+#SydneyPic {
+    background-image: url('sydney.jpg');
+}
 h6 {
     color: slategray;
     font-style: italic;
