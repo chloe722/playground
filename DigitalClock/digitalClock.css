@@ -2,23 +2,20 @@
 
 body {
     background-color: black;
-
 }
 
-.header {
-    background-color: pink;
-}
 
 .image {
     position: relative;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     opacity: 0.8;
-    box-shadow: 10px 5px 10px #888888;
+    box-shadow: 10px 10px 10px #888888;
     
 }
 
 .image:hover {
     opacity: 1.0;
+    transform: scale(1.1,1.1);
 }
 .text {
     color: ghostwhite;
@@ -26,8 +23,15 @@ body {
     position: absolute;
     text-align: center;
     top: 68.5px;
-    left: 42px;
+    left: 78px;
     z-index: 100;
     font-family: 'Chonburi', cursive;
     
+}
+
+h6 {
+    color: slategray;
+    font-style: italic;
+    text-align: right;
+    font-family: 'Chonburi', cursive;
 }

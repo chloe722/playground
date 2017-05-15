@@ -10,53 +10,55 @@ function calcTime(city, offset){
     d = new Date();
     utc = d.getTime() + (d.getTimezoneOffset()* 60000);
     nd = new Date(utc +(3600000*offset));
-    return  nd.toLocaleString();
+    val = nd.toLocaleString();
+    val_array = val.split(",")
+    return val_array[0] + "<br/>" + val_array[1]
 }
 
 function Alaskaupdate(){
     var AlaskaTime = document.getElementById('alaskaTime');
-    AlaskaTime.innerText = calcTime('Alaska', -8);
+    AlaskaTime.innerHTML = calcTime('Alaska', -8);
 }
 
 function LosAngeleskupdate(){
     var LosAngelesTime = document.getElementById('losangelesTime');
-    LosAngelesTime.innerText = calcTime('Los Angeles', -7);
+    LosAngelesTime.innerHTML = calcTime('Los Angeles', -7);
 }
 
 function NewYorkupdate(){
     var NewYorkTime = document.getElementById('newyorkTime');
-    NewYorkTime.innerText = calcTime('New Work', -4);
+    NewYorkTime.innerHTML = calcTime('New Work', -4);
 }
 
 
 function Londonupdate(){
     var LondonTime = document.getElementById('londonTime');
-    LondonTime.innerText = calcTime('London', 1);
+    LondonTime.innerHTML = calcTime('London', 1);
 }
 
 
 function Berlinupdate(){
     var BerlinTime = document.getElementById('berlinTime');
-    BerlinTime.innerText = calcTime('Berlin', 2);
+    BerlinTime.innerHTML = calcTime('Berlin', 2);
 }
 
 function Vilniusupdate(){
     var VilniusTime = document.getElementById('vilniusTime');
-    VilniusTime.innerText = calcTime('Vilnius', 3);
+    VilniusTime.innerHTML = calcTime('Vilnius', 3);
 }
 
 function Taipeiupdate(){
     var TaipeiTime = document.getElementById('taipeiTime');
-    TaipeiTime.innerText = calcTime('Taipei', 8);
+    TaipeiTime.innerHTML = calcTime('Taipei', 8);
 }
 function Tokyoupdate(){
     var TokyoTime = document.getElementById('tokyoTime');
-    TokyoTime.innerText = calcTime('Tokyo', 9);
+    TokyoTime.innerHTML = calcTime('Tokyo', 9);
 }
 
 function Sydneyupdate(){
     var SydneyTime = document.getElementById('sydneyTime');
-    SydneyTime.innerText = calcTime('Sydney', 10);
+    SydneyTime.innerHTML = calcTime('Sydney', 10);
 }
 
 setInterval(Alaskaupdate,1000);//setInterval makes clock 'tick' repeatedly
