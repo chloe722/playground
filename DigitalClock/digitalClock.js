@@ -6,7 +6,7 @@
         var minutes = currentTime.getMinutes();
         var second = currentTime.getSeconds();*/
 
-function calcTime(city, offset){
+/*function calcTime(city, offset){
     d = new Date();
     utc = d.getTime() + (d.getTimezoneOffset()* 60000);
     nd = new Date(utc +(3600000*offset));
@@ -14,61 +14,93 @@ function calcTime(city, offset){
     val_array = val.split(",")
     return val_array[0] + "<br/>" + val_array[1]
 }
-
+*/
 function Alaskaupdate(){
-    var AlaskaTime = document.getElementById('alaskaTime');
-    AlaskaTime.innerHTML = calcTime('Alaska', -8);
+    var clock = document.getElementById('alaskaTime');
+    var now = moment();
+    AlaskaTime = now.tz("America/Anchorage").format('MMMM Do YYYY')+'<br/>'+ now.format('h:mm:ss a');
+    clock.innerHTML = AlaskaTime;
 }
 
 function LosAngeleskupdate(){
-    var LosAngelesTime = document.getElementById('losangelesTime');
-    LosAngelesTime.innerHTML = calcTime('Los Angeles', -7);
+    var clock = document.getElementById('losangelesTime');
+    var now = moment();
+    LosAngelesTime = now.tz("America/Los_Angeles").format('MMMM Do YYYY')+'<br/>'+ now.format('h:mm:ss a');
+    clock.innerHTML = LosAngelesTime;
 }
 
 function NewYorkupdate(){
-    var NewYorkTime = document.getElementById('newyorkTime');
-    NewYorkTime.innerHTML = calcTime('New Work', -4);
+    var clock = document.getElementById('newyorkTime');
+    var now = moment();
+    NewYorkTime = now.tz("America/New_York").format("MMMM Do YYYY")+'<br/>'+ now.format('h:mm:ss a');
+    clock.innerHTML = NewYorkTime;
 }
-
 
 function Londonupdate(){
-    var LondonTime = document.getElementById('londonTime');
-    LondonTime.innerHTML = calcTime('London', 1);
+    var clock = document.getElementById('londonTime');
+    var now = moment();
+    LondonTime = now.format('MMMM Do YYYY') +'<br/>'+ now.format('h:mm:ss a');
+    clock.innerHTML = LondonTime;
+    
 }
-
 
 function Berlinupdate(){
-    var BerlinTime = document.getElementById('berlinTime');
-    BerlinTime.innerHTML = calcTime('Berlin', 2);
+    var clock = document.getElementById('berlinTime');
+    var now = moment();
+    BerlinTime = now.tz("Europe/Berlin").format("MMMM Do YYYY") + '<br/>' + now.format('h:mm:ss a');
+    clock.innerHTML = BerlinTime;
+
+    /*if (now.format('a') == now.format('h:mm:ss am')){
+        $(".berlinNight").show();
+    };*/
 }
 
+
+
 function Vilniusupdate(){
-    var VilniusTime = document.getElementById('vilniusTime');
-    VilniusTime.innerHTML = calcTime('Vilnius', 3);
+    var clock = document.getElementById('vilniusTime');
+    var now = moment();
+    VilniusTime = now.tz("Europe/Vilnius").format("MMMM Do YYYY") + '<br/>' + now.format('h:mm:ss a');
+    clock.innerHTML = VilniusTime;
+    
 }
 
 function Taipeiupdate(){
-    var TaipeiTime = document.getElementById('taipeiTime');
-    TaipeiTime.innerHTML = calcTime('Taipei', 8);
+    var clock = document.getElementById('taipeiTime');
+    var now = moment();
+    TaipeiTime = now.tz("Asia/Taipei").format("MMMM Do YYYY") + '<br/>' + now.format('h:mm:ss a');
+    clock.innerHTML = TaipeiTime;
 }
+
 function Tokyoupdate(){
-    var TokyoTime = document.getElementById('tokyoTime');
-    TokyoTime.innerHTML = calcTime('Tokyo', 9);
+    var clock = document.getElementById('tokyoTime');
+    var now = moment();
+    TokyoTime = now.tz("Asia/Tokyo").format("MMMM Do YYYY") + '<br/>' + now.format('h:mm:ss a');
+    clock.innerHTML = TokyoTime;
 }
+
+
 
 function Sydneyupdate(){
-    var SydneyTime = document.getElementById('sydneyTime');
-    SydneyTime.innerHTML = calcTime('Sydney', 10);
+    var clock = document.getElementById('sydneyTime');
+    var now = moment();
+    SydneyTime = now.tz("Australia/Sydney").format("MMMM Do YYYY") + '<br/>' + now.format('h:mm:ss a');
+    clock.innerHTML = SydneyTime;
+
 }
 
-setInterval(Alaskaupdate,1000);//setInterval makes clock 'tick' repeatedly
-setInterval(NewYorkupdate,1000);
-setInterval(LosAngeleskupdate,1000);
-setInterval(Londonupdate,1000); 
-setInterval(Berlinupdate,1000);
-setInterval(Vilniusupdate,1000);
-setInterval(Taipeiupdate,1000);
-setInterval(Tokyoupdate,1000);
-setInterval(Sydneyupdate,1000);
+window.addEventListener("load", function(e){
+    setInterval(Alaskaupdate,1000);//setInterval makes clock 'tick' repeatedly
+    setInterval(LosAngeleskupdate,1000);
+    setInterval(NewYorkupdate,1000);
+    setInterval(Londonupdate,1000);
+    setInterval(Berlinupdate,1000);
+    setInterval(Vilniusupdate,1000);
+    setInterval(Taipeiupdate,1000);
+    setInterval(Tokyoupdate,1000); 
+    setInterval(Sydneyupdate,1000);
+})
+
+
 
 

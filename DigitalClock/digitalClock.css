@@ -57,6 +57,14 @@ body {
 #SydneyPic {
     background-image: url('sydney.jpg');
 }
+
+/*.berlinNight {
+    background-image: url('berlinNight.jpg');
+    width: 300px;
+    height: 200px;
+}
+*/
+
 h6 {
     color: slategray;
     font-style: italic;
