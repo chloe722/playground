@@ -47,12 +47,13 @@ function Londonupdate(){
 function Berlinupdate(){
     var clock = document.getElementById('berlinTime');
     var now = moment();
-    BerlinTime = now.tz("Europe/Berlin").format("MMMM Do YYYY") + '<br/>' + now.format('h:mm:ss a');
+    var Time = now.tz("Europe/Berlin")
+    var BerlinTime = Time.format("MMMM Do YYYY") + '<br/>' + Time.format('HH:mm:ss ');
     clock.innerHTML = BerlinTime;
 
-    /*if (now.format('a') == now.format('h:mm:ss am')){
-        $(".berlinNight").show();
-    };*/
+    if (Time.hours() >= 18 || Time.hours()<=5) {
+        $('#BerlinPic').addClass('berlinNight');
+    }
 }
 
 
