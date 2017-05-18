@@ -31,20 +31,31 @@ body {
 #AlaskaPic {
     background-image: url('Alaska.jpg');
 }
+#AlaskaPic.alaskaNight {
+    background-image: url('alaskaNight.jpg');
+}
 
 #LondonPic {
     background-image: url('london.jpg');
-   
 }
+#LondonPic.londonNight {
+    background-image: url('londonNight.jpg');
+}
+
 #TaipeiPic {
+    background-image: url('taipeiDay.jpg');
+}
+#TaipeiPic.taipeiNight {
     background-image: url('taipei101.jpg');
 }
 #NewYorkPic {
     background-image: url('newyork.jpg');
 }
+#NewYorkPic.newyorkNight {
+    background-image: url('newyorkNight.jpg');
+}
 #BerlinPic {
     background-image: url('berlin.jpg');
-    
 }
 
 #BerlinPic.berlinNight {
@@ -54,17 +65,27 @@ body {
 #TokyoPic {
     background-image: url('tokyo.jpg');
 }
+#TokyoPic.tokyoNight {
+    background-image: url('tokyoNight.jpg');
+}
 #LAPic {
     background-image: url('LA.jpg');
+}
+#LAPic.LANight {
+    background-image: url('LANight.jpg');
 }
 #VilniusPic {
     background-image: url('vilnius.jpg');
 }
+#VilniusPic.vilniusNight {
+    background-image: url('vilniusNight.jpg');
+}
 #SydneyPic {
     background-image: url('sydney.jpg');
 }
-
-
+#SydneyPic.sydneyNight {
+    background-image: url('sydneyNight.jpg');
+}
 
 
 h6 {
