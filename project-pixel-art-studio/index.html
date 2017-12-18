@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Pixel Art Studio</h1>
+        <h2>Choose Grid Size</h2>            
+            <form id="sizePicker">
+                Grid Height:
+                <input type="number" id="input_height" name="height" min="1" value="10">
+                Grid Width:
+                <input type="number" id="input_width" name="width" min="1" value="10">
+                <input type="submit" id="createBtn" value="Create" class="buttons">
+            </form>
+    </div>
+</br>
+    <div class="canvasContainer">
+        <input type="color" id="colorPicker">
+        <button id="restartButton" class="buttons">Restart</button>
+        </br>
+        </br>
+        <table id="pixel_canvas"></table>
+    </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+<footer id="footer">
+    <p>&copy; Chloe Hsu</p>
+</footer>
+</html>

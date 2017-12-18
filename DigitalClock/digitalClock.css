@@ -87,7 +87,16 @@ body {
     background-image: url('sydneyNight.jpg');
 }
 
+.catagory {
+    text-align:left;
+}
 
+table {
+    border: 2px solid white;
+}
+th {
+    color:floralwhite
+}
 h6 {
     color: slategray;
     font-style: italic;
