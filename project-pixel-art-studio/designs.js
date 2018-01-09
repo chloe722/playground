@@ -2,13 +2,22 @@
 const table = $("#pixel_canvas");
 
 // line 5 to line 11 is to retrieve whether the grid has been clicked.
-var mouseDown = false;
-$("body").on("mousedown",function() { 
-    mouseDown=true;
-});
-$("body").on("mouseup",function() {
-    mouseDown=false;
-});
+$("body").on("contextmenu", function(evt){
+    evt.preventDefault();
+  }, false);
+  
+  var mouseDown = false;
+  $("body").mousedown(function(e) {
+    if(e.which === 1){
+      mouseDown = true;}
+    if(e.which === 3 ){
+      mouseDown = false;}
+  });
+  
+  $("body").on("mouseup",function() {
+      mouseDown=false;
+  });
+  
 
 function makeGrid() {
     var height = $("#input_height").val();
@@ -22,28 +31,30 @@ function makeGrid() {
             cell.hide();
             setTimeout(() => {
                 cell.fadeIn();
-            }, 30*i + 30*j);
+            }, 15*i + 15*j);
         }
         $("#pixel_canvas").append(row); 
     }   
 
-    $("#pixel_canvas td").on("mousedown",function(){
+    $("#pixel_canvas td").mousedown(function(e){
         var colorYouPicked = $('#colorPicker').val();
         var currentBg = rgb2hex($(this).css("background-color"));
+      if(e.which === 3){
         if (currentBg === colorYouPicked){
-            $(this).css("background-color","white");
-        }else{
-            $(this).css("background-color",colorYouPicked);
-        }
+            $(this).css("background-color","white");}}
+       if(e.which === 1){
+            $(this).css("background-color",colorYouPicked)
+       };
     });
 
     $("#pixel_canvas td").mouseenter(function(){
         var colorYouPicked = $('#colorPicker').val();
         if (mouseDown){
-            $(this).css("background-color",colorYouPicked);
+           $(this).css("background-color",colorYouPicked);
         }
       });
 }
+
 
 $("#createBtn").on("click",function(event){
     event.preventDefault();
