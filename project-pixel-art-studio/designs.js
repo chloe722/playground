@@ -1,23 +1,25 @@
-
 const table = $("#pixel_canvas");
-
-// line 5 to line 11 is to retrieve whether the grid has been clicked.
+// line3 default prevent right click
 $("body").on("contextmenu", function(evt){
-    evt.preventDefault();
-  }, false);
-  
-  var mouseDown = false;
-  $("body").mousedown(function(e) {
-    if(e.which === 1){
-      mouseDown = true;}
-    if(e.which === 3 ){
-      mouseDown = false;}
-  });
-  
-  $("body").on("mouseup",function() {
-      mouseDown=false;
-  });
-  
+  evt.preventDefault();
+}, false);
+// line 8 to line 20 is to retrieve whether the grid has been clicked.
+var mouseDown = false;
+var mode = 'brush';
+$("body").mousedown(function(e) {
+  if(e.which === 1){
+    mouseDown = true;
+    mode = 'brush';
+  }
+  if(e.which === 3 ){
+    mouseDown = true;
+    mode = 'erase';
+  }
+});
+
+$("body").on("mouseup",function() {
+    mouseDown=false;
+});
 
 function makeGrid() {
     var height = $("#input_height").val();
@@ -25,7 +27,7 @@ function makeGrid() {
     table.empty();
     for(var i=0; i<height; i++){
         let row = $('<tr></tr>');
-        for(var j=0; j <width; j++){
+        for(var j=0; j<width; j++){
             let cell = $("<td></td>");
             row.append(cell);
             cell.hide();
@@ -49,26 +51,29 @@ function makeGrid() {
 
     $("#pixel_canvas td").mouseenter(function(){
         var colorYouPicked = $('#colorPicker').val();
-        if (mouseDown){
-           $(this).css("background-color",colorYouPicked);
+        if(mouseDown){
+          if( mode === 'brush'){
+            $(this).css("background-color",colorYouPicked);}
+          else{
+             $(this).css("background-color","white");}
         }
       });
 }
-
 
 $("#createBtn").on("click",function(event){
     event.preventDefault();
     makeGrid();
     $(".canvasContainer").show();
-    $(".header").slideToggle();
+    $(".headerContainer").slideToggle();
     $("#footer").hide();
 });
 
 $("#restartButton").on("click",function(){
-    $(".header").slideToggle();
+    $(".headerContainer").slideToggle();
     $(".canvasContainer").hide();
     $("#footer").slideToggle();
 })
+
 
 //Convert from rgb to hex
 function rgb2hex(rgb){
@@ -78,5 +83,3 @@ function rgb2hex(rgb){
   ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
   ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
 }
-
-
