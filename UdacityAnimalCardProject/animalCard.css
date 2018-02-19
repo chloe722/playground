@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 .container {
     width: 350px;
     background-color: #d2eaf2;
