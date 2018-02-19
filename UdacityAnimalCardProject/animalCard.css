@@ -1,0 +1,40 @@
+.container {
+    width: 350px;
+    background-color: #d2eaf2;
+    box-shadow: 5px 5px 10px lightgray;
+}
+.itemname {
+    font-weight: bold;
+}
+
+.constyle {
+    border: #2583a3 solid;
+    border-radius: 10px;
+    padding: 5px 12px 5px 12px;
+}
+
+.desContainer { 
+    border-color: white;
+    background-color: #f9fbfc;
+    margin: 10px 0px 10px 0px;
+}
+
+.infoDetail {
+    list-style: none;
+}
+
+.dolphainImg {
+    width: 300px;
+    border: solid white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px lightgray;
+    margin-left: 22px; 
+}
+.info {
+    padding: 0px;
+}
+
+h3 {
+  text-align: center;
+  color: #0b558e;
+}
