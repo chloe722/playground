@@ -1,5 +1,6 @@
 body {
     background-color: #F5EDEF;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -27,9 +28,6 @@ body {
     transition: 5s;
 }
 
-/*.spinning-wheel:hover {
-  transform: rotate(11360deg);
-}*/
 
 
  
